@@ -1,4 +1,5 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { siGithub } from 'simple-icons';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import project1 from "@/assets/project1.jpg";
@@ -69,7 +70,11 @@ export const Projects = () => {
               <CardFooter className="gap-2">
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-4 h-4" />
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-white w-4 h-4">
+                      <title>{siGithub.title}</title>
+                      <path d={siGithub.path} />
+                    </svg>
+
                     Código
                   </a>
                 </Button>

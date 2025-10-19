@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { siGithub, siMaildotru } from 'simple-icons';
 import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
@@ -15,7 +16,10 @@ export const Footer = () => {
           <div className="flex gap-2">
             <Button variant="ghost" size="icon" asChild>
               <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="w-5 h-5" />
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-white w-5 h-5">
+                  <title>{siGithub.title}</title>
+                  <path d={siGithub.path} />
+                </svg>
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
@@ -25,7 +29,10 @@ export const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a href="mailto:seu@email.com" aria-label="Email">
-                <Mail className="w-5 h-5" />
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-white w-5 h-5">
+                  <title>{siMaildotru.title}</title>
+                  <path d={siMaildotru.path} />
+                </svg>
               </a>
             </Button>
           </div>
