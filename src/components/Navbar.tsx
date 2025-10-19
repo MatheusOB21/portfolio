@@ -27,17 +27,15 @@ export const Navbar = () => {
       isScrolled ? "bg-background/80 backdrop-blur-lg shadow-card" : "bg-transparent"
     }`}>
       <div className="container max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <a href="#home" className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-            {"<Dev />"}
-          </a>
-          
+        <div className="flex items-center justify-center h-20">
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-1">
             {menuItems.map((item) => (
               <Button
                 key={item.href}
                 variant="ghost"
+                size="lg"
+                className="text-lg"
                 asChild
               >
                 <a href={item.href}>{item.label}</a>
