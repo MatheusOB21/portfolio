@@ -7,7 +7,7 @@ export const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 gradient-hero">
       <div className="container max-w-6xl mx-auto text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Seu Nome Aqui
+          Matheus
         </h1>
         <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8">
           Desenvolvedor Full Stack
