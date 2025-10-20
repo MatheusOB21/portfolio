@@ -13,6 +13,13 @@ const menuItems = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const scrollToSection = (hash: string) => {
+    const id = hash.replace("#", ""); // Remove o #
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +44,10 @@ export const Navbar = () => {
                 size="lg"
                 className="text-lg"
                 asChild
+                onClick={(e) => { 
+                  e.preventDefault();
+                  scrollToSection(item.href)
+                }}
               >
                 <a href={item.href}>{item.label}</a>
               </Button>
