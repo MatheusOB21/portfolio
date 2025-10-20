@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react()].filter(Boolean),
-  base: "/portfolio"
+  base: "/portfolio",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
