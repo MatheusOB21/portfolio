@@ -5,18 +5,35 @@ import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import FadeSection from "@/components/ui/fade-section";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
+
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <FadeSection>
+          <Hero />
+        </FadeSection>
+        
+        <FadeSection>
+          <About />
+        </FadeSection>
+
+        <FadeSection>
+          <Skills />
+        </FadeSection>
+
+        <FadeSection>
+          <Projects />
+        </FadeSection>
+
+        <FadeSection>
+          <Contact />
+        </FadeSection>
       </main>
+
       <Footer />
     </div>
   );

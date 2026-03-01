@@ -16,7 +16,6 @@ export const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica de envio do formulário
     toast.success("Mensagem enviada com sucesso!");
     setFormData({ name: "", email: "", message: "" });
   };
@@ -44,8 +43,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <a href="mailto:seu@email.com" className="text-foreground hover:text-primary transition-smooth">
-                      seu@email.com
+                    <a href="mailto:matheus53barros@gmail.com" className="text-foreground hover:text-primary transition-smooth">
+                      matheus53barros@gmail.com
                     </a>
                   </div>
                 </div>
@@ -56,8 +55,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Telefone</p>
-                    <a href="tel:+5511999999999" className="text-foreground hover:text-primary transition-smooth">
-                      +55 (11) 99999-9999
+                    <a href="tel:+5585991385292" className="text-foreground hover:text-primary transition-smooth">
+                      +55 (85) 9 9138-5292
                     </a>
                   </div>
                 </div>
@@ -68,7 +67,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Localização</p>
-                    <p className="text-foreground">Sua Cidade, Brasil</p>
+                    <p className="text-foreground">SP, Brasil</p>
                   </div>
                 </div>
               </CardContent>

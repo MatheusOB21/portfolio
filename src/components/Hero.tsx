@@ -2,6 +2,15 @@ import { Linkedin } from "lucide-react";
 import { siGithub, siMaildotru } from 'simple-icons';
 import { Button } from "@/components/ui/button";
 
+const scrollToSection = (hash: string) => {
+  const id = hash.replace("#", "");
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+};
+
 export const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 gradient-hero">
@@ -18,7 +27,7 @@ export const Hero = () => {
         
         <div className="flex flex-wrap gap-4 justify-center mb-12">
           <Button size="lg" asChild>
-            <a href="#projects">Ver Projetos</a>
+            <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection("#projects")}}>Ver Projetos</a>
           </Button>
           <Button size="lg" variant="outline" asChild>
             <a href="#contact">Entre em Contato</a>

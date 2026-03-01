@@ -15,7 +15,7 @@ export const Footer = () => {
           
           <div className="flex gap-2">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/MatheusOB21" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-white w-5 h-5">
                   <title>{siGithub.title}</title>
                   <path d={siGithub.path} />
@@ -23,16 +23,8 @@ export const Footer = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/matheusoliveira2101/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:seu@email.com" aria-label="Email">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-white w-5 h-5">
-                  <title>{siMaildotru.title}</title>
-                  <path d={siMaildotru.path} />
-                </svg>
               </a>
             </Button>
           </div>

@@ -6,19 +6,19 @@ const skillCategories = [
     icon: Code,
     title: "Frontend",
     description: "React, TypeScript, Tailwind CSS",
-    skills: ["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS"]
+    skills: ["React", "Vite", "TypeScript", "JavaScript", "HTML/CSS", "CSS"]
   },
   {
     icon: Server,
     title: "Backend",
-    description: "Node.js, Python, APIs RESTful",
-    skills: ["Node.js", "Express", "Python", "Django", "RESTful APIs", "GraphQL"]
+    description: "Ruby on Rails, APIs RESTful",
+    skills: ["Ruby", "Rails", "RESTful APIs", "Design Pattern", "Clean Code"]
   },
   {
     icon: Database,
     title: "Database",
-    description: "SQL, NoSQL, ORM",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Prisma", "Supabase"]
+    description: "SQL, ORM",
+    skills: ["PostgreSQL", "Redis", "Supabase"]
   },
   {
     icon: Smartphone,
@@ -29,13 +29,13 @@ const skillCategories = [
   {
     icon: Palette,
     title: "Design",
-    description: "UI/UX, Prototipagem, Design Systems",
-    skills: ["Figma", "UI/UX Design", "Design Systems", "Wireframing"]
+    description: "UI/UX, Design Systems",
+    skills: ["Figma", "UI/UX Design", "Design Systems"]
   },
   {
     icon: Globe,
     title: "DevOps",
-    description: "CI/CD, Cloud, Containerização",
+    description: "CI/CD, Cloud, Docker",
     skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD", "Linux"]
   }
 ];

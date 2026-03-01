@@ -8,28 +8,20 @@ import project3 from "@/assets/project3.jpg";
 
 const projects = [
   {
-    title: "Dashboard Analytics",
-    description: "Plataforma completa de analytics com visualização de dados em tempo real e relatórios personalizados.",
+    title: "Portifolio",
+    description: "Portifolio pessoal para aprendizado e experiências de código",
     image: project1,
-    technologies: ["React", "TypeScript", "Chart.js", "Node.js"],
-    github: "https://github.com/seuusuario/projeto1",
-    demo: "https://projeto1.demo.com"
+    technologies: ["React", "TypeScript", "Vite", "Node.js"],
+    github: "https://github.com/MatheusOB21/portfolio",
+    demo: "https://matheusob21.github.io/portfolio/"
   },
   {
-    title: "E-commerce Platform",
-    description: "Sistema de e-commerce moderno com carrinho de compras, pagamentos e gerenciamento de produtos.",
+    title: "Landing Page",
+    description: "Landing page para exibição de produto.",
     image: project2,
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    github: "https://github.com/seuusuario/projeto2",
-    demo: "https://projeto2.demo.com"
-  },
-  {
-    title: "Mobile App",
-    description: "Aplicativo mobile cross-platform com autenticação, notificações push e sincronização offline.",
-    image: project3,
-    technologies: ["React Native", "Firebase", "Redux", "API REST"],
-    github: "https://github.com/seuusuario/projeto3",
-    demo: "https://projeto3.demo.com"
+    technologies: ["React", "TypeScript", "Vite", "Tailwind", "Node.js"],
+    github: "https://github.com/MatheusOB21/hopwire",
+    demo: "https://hopwireisp.com.br/"
   }
 ];
 
@@ -41,7 +33,7 @@ export const Projects = () => {
           Projetos
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="shadow-card border-border hover:shadow-glow transition-smooth overflow-hidden animate-slide-up">
               <div className="overflow-hidden">

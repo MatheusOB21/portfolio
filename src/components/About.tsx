@@ -20,18 +20,18 @@ export const About = () => {
           <div className="space-y-6 animate-slide-up">
             <p className="text-lg text-muted-foreground">
               Olá! Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras. 
-              Com X anos de experiência em desenvolvimento web, tenho expertise em transformar 
+              Com 2 anos de experiência em desenvolvimento web, tenho expertise em transformar 
               conceitos complexos em interfaces intuitivas e funcionais.
             </p>
             
             <p className="text-lg text-muted-foreground">
-              Minha jornada na tecnologia começou [insira sua história aqui]. Desde então, 
+              Minha jornada na tecnologia começou em 2023. Desde então, 
               venho constantemente aprimorando minhas habilidades e me mantendo atualizado 
               com as últimas tendências do mercado.
             </p>
             
             <p className="text-lg text-muted-foreground">
-              Quando não estou codificando, gosto de [seus hobbies aqui]. Acredito que o 
+              Quando não estou codificando, gosto de assistir séries, tocar piano, jogar e realizar bons hábitos. Acredito que o 
               equilíbrio entre trabalho e vida pessoal é essencial para manter a criatividade 
               e produtividade.
             </p>

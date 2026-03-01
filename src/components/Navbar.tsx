@@ -14,10 +14,10 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const scrollToSection = (hash: string) => {
-    const id = hash.replace("#", ""); // Remove o #
+    const id = hash.replace("#", "");
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
