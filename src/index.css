@@ -8,22 +8,22 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 30% 6%;
+    --background: 222 25% 4%;
     --foreground: 210 40% 98%;
 
-    --card: 220 25% 10%;
+    --card: 220 22% 7%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 25% 10%;
+    --popover: 220 22% 7%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 263 70% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 25% 15%;
+    --secondary: 220 20% 12%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 20% 20%;
+    --muted: 220 18% 14%;
     --muted-foreground: 215 20% 65%;
 
     --accent: 250 70% 65%;
@@ -32,8 +32,8 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
+    --border: 220 18% 15%;
+    --input: 220 18% 15%;
     --ring: 263 70% 60%;
 
     --radius: 0.75rem;
@@ -41,13 +41,14 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%), hsl(250 70% 65%));
     --gradient-hero: linear-gradient(135deg, hsl(263 70% 50% / 0.1), hsl(250 70% 55% / 0.1));
-    
+
     /* Shadows */
     --shadow-glow: 0 0 40px hsl(263 70% 60% / 0.3);
     --shadow-card: 0 4px 20px hsl(220 30% 2% / 0.4);
-    
+
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
   }
 }
 
@@ -62,6 +63,12 @@ All colors MUST be HSL.
 
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-display;
   }
 }
 
@@ -85,7 +92,27 @@ All colors MUST be HSL.
   .transition-smooth {
     transition: var(--transition-smooth);
   }
-  
+
+  .label-eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.5) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }
